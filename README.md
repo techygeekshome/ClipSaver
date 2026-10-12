@@ -14,12 +14,14 @@ Save TikTok videos and photo posts from a whole profile or a single video, in th
 
 ## Install
 
-Pick the download for your browser from the [latest release](https://github.com/techygeekshome/ClipSaver/releases/latest).
+**Microsoft Edge:** install Clip Saver from the [Edge Add-ons store](https://microsoftedge.microsoft.com/addons/detail/clip-saver-for-tiktok/nelfacpkaicjmbidfjlambopfgobomgd). It updates itself.
+
+For other browsers, pick the download from the [latest release](https://github.com/techygeekshome/ClipSaver/releases/latest).
 
 | Browser | Download |
 |---|---|
 | Chrome, Brave, Opera, Vivaldi | `ClipSaver-chrome.zip` |
-| Microsoft Edge | `ClipSaver-edge.zip` |
+| Microsoft Edge | [Edge Add-ons store](https://microsoftedge.microsoft.com/addons/detail/clip-saver-for-tiktok/nelfacpkaicjmbidfjlambopfgobomgd), or `ClipSaver-edge.zip` |
 | Firefox (142 or newer) | `ClipSaver-firefox.zip` |
 
 `ClipSaver.zip` is the same package as the Chrome and Edge downloads.
