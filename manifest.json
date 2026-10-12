@@ -1,0 +1,62 @@
+{
+  "manifest_version": 3,
+  "name": "Clip Saver for TikTok",
+  "short_name": "Clip Saver",
+  "version": "1.0.0",
+  "description": "Save TikTok videos and photo posts from a profile or a single video in the best quality, in one ZIP. Not affiliated with TikTok.",
+  "permissions": [
+    "scripting",
+    "downloads",
+    "storage",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "https://www.tiktok.com/*",
+    "https://*.tiktok.com/*",
+    "https://*.tiktokcdn.com/*",
+    "https://*.tiktokcdn-us.com/*",
+    "https://*.tiktokcdn-eu.com/*",
+    "https://*.tiktokv.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.tiktok.com/*"
+      ],
+      "js": [
+        "hook.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://www.tiktok.com/*"
+      ],
+      "js": [
+        "extract.js",
+        "bridge.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_title": "Save with Clip Saver",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "homepage_url": "https://techygeekshome.info/browser-extensions/clip-saver/"
+}
